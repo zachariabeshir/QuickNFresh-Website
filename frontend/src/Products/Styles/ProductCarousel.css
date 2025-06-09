@@ -1,0 +1,51 @@
+.carousel-container {
+  background-color: #0f0f0f;
+  padding: 70px 30px;
+  color: white;
+  margin-top: 0px;
+}
+
+.carousel-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #22c55e;
+  margin-bottom: 40px;
+}
+
+.product-card {
+  background-color: #1a1a1a;
+  padding: 20px;
+  margin: 0 10px; /* Adds 10px space on left and right */
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #f97316;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  border-color: #22c55e;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  z-index: 10;
+}
+
+.product-img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.product-card {
+  margin: 0 8px;
+}
+
+.carousel-container .slick-slide {
+  padding: 0 2px;
+}
