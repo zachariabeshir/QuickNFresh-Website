@@ -1,1 +1,84 @@
+/* Header Container */
+.header-top {
+  width: 100vw;
+  flex-direction: column; /* Added from media query */
+  height: auto; /* Adjusted for responsiveness */
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  padding: 10px; /* Added from media query */
+  position: fixed;
+  z-index: 1000;
+  background-color: rgba(42, 42, 42, 0.5); /* Semi-transparent */
+  transition: background-color 0.3s ease-in-out;
+  margin-bottom: 20px; /* Added from media query */
+}
 
+/* Logo Styling */
+.logo {
+  width: 100px;
+}
+
+/* Header Links */
+.header-links {
+  display: flex;
+  flex-wrap: wrap; /* Added from media query */
+  justify-content: center; /* Added from media query */
+  gap: 10px; /* Updated from media query */
+  margin-bottom: 20px; /* Added from media query */
+}
+
+.header-links a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: orange;
+  transition: width 0.3s ease;
+}
+
+.header-links a:hover::after {
+  width: 100%;
+}
+
+.header-links a:hover {
+  color: orange;
+}
+
+/* Button Styling */
+.become-customer {
+  background-color: orange;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  width: 100%; /* Added from media query */
+  margin-top: 10px; /* Added from media query */
+  margin-bottom: 10px; /* Added from media query */
+}
+
+.become-customer:hover {
+  background-color: white;
+  color: orange;
+  border: 2px solid orange;
+  transform: scale(1.1);
+  text-decoration: underline;
+}
