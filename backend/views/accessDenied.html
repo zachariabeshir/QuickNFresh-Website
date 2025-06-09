@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page Not Found - Quick N Fresh LLC</title>
+    <title>Access Denied - Quick N Fresh LLC</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -13,24 +13,29 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background-color: #f7f7f7;
-        color: #333;
+        background-color: #f8d7da; /* Soft red to signal restricted access */
+        color: #721c24;
       }
       .container {
         text-align: center;
+        background-color: #fff;
+        padding: 30px;
+        border: 1px solid #f5c6cb;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
       h1 {
-        font-size: 3rem;
-        color: #ff6600; /* Orange for emphasis */
+        font-size: 2.5rem;
+        color: #721c24; /* Dark red */
       }
       p {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         margin: 15px 0;
       }
       a {
         display: inline-block;
         text-decoration: none;
-        background-color: #28a745; /* Green for freshness */
+        background-color: #ff6600; /* Orange for your brand */
         color: #fff;
         padding: 10px 20px;
         border-radius: 5px;
@@ -38,17 +43,19 @@
         transition: background-color 0.3s ease;
       }
       a:hover {
-        background-color: #218838; /* Slightly darker green on hover */
+        background-color: #cc5200; /* Slightly darker orange */
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>404 - Page Not Found</h1>
-      <p>Oops! The page you’re looking for doesn’t exist.</p>
+      <h1>Access Denied</h1>
+      <p>Sorry, you don't have permission to access this page.</p>
       <p>
-        Return to the <a href="/">Homepage</a> or check the URL and try again.
+        If you believe this is a mistake, please contact our
+        <a href="mailto:support@quicknfresh.com">support team</a>.
       </p>
+      <a href="/">Return to Homepage</a>
     </div>
   </body>
 </html>
