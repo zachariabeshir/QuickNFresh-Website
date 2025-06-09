@@ -1,0 +1,70 @@
+/* SecurityAdmin.css */
+
+.security-admin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full height of the viewport */
+  background-color: #1a1a1a; /* Subtle background color */
+  font-family: "Arial", sans-serif;
+}
+
+.security-admin h1 {
+  color: Green; /* Dark text color for readability */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.enter-access-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.enter-access-code input[type="password"] {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.enter-access-code input[type="password"]:focus {
+  border-color: #007bff; /* Blue outline on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.submit-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: orange; /* Blue button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: orangered; /* Darker blue on hover */
+}
+
+.submit-button:active {
+  transform: scale(0.98); /* Slight button press effect */
+}
+
+.response-message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f0f8ff; /* Light blue background for success or info */
+  color: #333; /* Dark text for visibility */
+}
+
+.response-message.error {
+  background-color: #ffe6e6; /* Light red background for errors */
+  color: #a94442; /* Dark red text for error emphasis */
+}
