@@ -1,0 +1,43 @@
+/* Modal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(8px); /* Apply a blur effect to the background */
+  z-index: 1000; /* Ensure the modal appears above all other elements */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 400px; /* Increase the width */
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow for better appearance */
+}
+
+.modal-content p {
+  font-size: 18px; /* Make the text larger */
+  margin-bottom: 20px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Make the button text larger */
+}
+
+button:hover {
+  background-color: rgb(186, 0, 0);
+}

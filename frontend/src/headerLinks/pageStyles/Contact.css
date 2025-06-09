@@ -1,0 +1,176 @@
+/* === CONTACT PAGE SPECIFIC STYLES === */
+.contact-page {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  padding-top: 190px; /* To account for header overlap */
+  background-color: #111;
+  color: white;
+  gap: 2rem; /* Adding space between image and content */
+}
+
+@media (max-width: 786px) {
+  .contact-page {
+    flex-direction: column;
+    padding-top: 170px; /* Extra space for header */
+  }
+}
+
+/* === SIDE IMAGE + INFO === */
+.sideImage {
+  width: 30%;
+  background-color: #303030b9;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sideImage-description {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Logo and small text container */
+.sideImage-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.sideImage-intro img {
+  width: 100px;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.sideImage-intro div {
+  height: 100px;
+  border-left: 3px solid #ccc;
+  display: inline-block;
+}
+
+.sideImage-intro p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+@media (max-width: 786px) {
+  .sideImage {
+    width: 100%; /* Take full width on small screens */
+    padding: 1rem; /* Adjust padding */
+    margin-bottom: 2rem; /* Space between image and form */
+  }
+
+  .sideImage-intro {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .sideImage-intro div {
+    display: none; /* Hide the divider on smaller screens */
+  }
+
+  .sideImage-description {
+    width: 100%; /* Make sure image occupies full width */
+    border-radius: 0;
+  }
+}
+
+/* === FULL CONTACT BODY === */
+.full-contact-body {
+  width: 70%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #1a1a1a;
+}
+
+@media (max-width: 786px) {
+  .full-contact-body {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+/* === FORM INTRO === */
+.contact-intro {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-intro h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* === FORM SECTION === */
+.form h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background-color: #222;
+  color: white;
+}
+
+.form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* === RESPONSIVE FORM STYLES === */
+.form > div {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form > div input {
+  flex: 1;
+}
+
+/* Stack form inputs when screen size is smaller */
+@media (max-width: 786px) {
+  .form > div {
+    flex-direction: column;
+  }
+
+  .form button {
+    width: 100%;
+  }
+}
+
+/* === SUBMIT BUTTON === */
+.form button {
+  width: 100%;
+  max-width: 300px;
+  padding: 15px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ffffff22;
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.form button:hover {
+  background-color: white;
+  color: black;
+}
