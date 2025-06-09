@@ -1,1 +1,53 @@
+/* pageStyles/Card.css */
+body {
+  background-color: #1a1a1a;
+}
 
+.card-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+}
+
+.display-card {
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.card-image > div {
+  padding: 1.5rem;
+}
+
+.card-image h1 {
+  font-size: 2rem;
+  color: #22c55e;
+}
+
+.card-image hr {
+  border: none;
+  border-top: 2px solid #f97316;
+  margin: 1rem 0;
+}
+
+.links {
+  margin-top: 20px;
+  color: #f97316;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.links:hover {
+  color: #22c55e;
+}
