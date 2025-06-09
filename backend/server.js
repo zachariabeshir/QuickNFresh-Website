@@ -74,8 +74,10 @@ app.all("*", (req, res) => {
   }
 });
 
+// Run Error Handler
 app.use(errorHandler);
 
+// Connect With Database before anything
 mongoose.connection.once("open", () => {
   console.log("Connected to MongoDB");
   app.listen(PORT, () =>
