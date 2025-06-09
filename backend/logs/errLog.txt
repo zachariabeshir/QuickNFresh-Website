@@ -1,1 +1,4 @@
-
+20250318	14:01:52	ec8ddc22-d0d2-4924-970a-306afaa77f89	Error: ENOENT: no such file or directory, stat 'C:\Users\zbesh\OneDrive\Desktop\Quick N Fresh Website\frontend\build\index.html'
+20250318	14:01:59	d70a4633-fe56-48db-a199-77929c09f9ea	Error: ENOENT: no such file or directory, stat 'C:\Users\zbesh\OneDrive\Desktop\Quick N Fresh Website\frontend\build\index.html'
+20250318	14:40:41	022fd244-cdb3-444b-8bdb-79fade5e8d0d	SyntaxError: Expected ',' or '}' after property value in JSON at position 85 (line 4 column 33)
+20250318	14:40:48	020f354b-a7c1-4fff-b631-1e6c80d1c521	SyntaxError: Expected ',' or '}' after property value in JSON at position 85 (line 4 column 33)
